@@ -1,49 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OFSport - Sua Loja de Futebol</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OFSport - Catálogo</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #111; color: #fff; padding: 20px; text-align: center; }
-    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 20px; }
-    .product { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; }
-    .product img { width: 100%; height: auto; border-radius: 8px; }
-    .btn { display: inline-block; margin-top: 10px; background: #25d366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; }
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #000; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #111; color: #fff; display: flex; justify-content: center; gap: 20px; padding: 10px; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .product { background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); overflow: hidden; text-align: center; padding: 15px; }
+    .product img { width: 100%; height: auto; border-radius: 10px; }
+    .product h3 { margin: 10px 0 5px; }
+    .product p { margin: 5px 0; }
+    .btn { display: inline-block; margin-top: 10px; background: #25d366; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>
   <header>
     <h1>OFSport</h1>
-    <p>Camisas, Conjuntos, Casacos e Chuteiras</p>
+    <p>Sua loja de futebol - Camisas, Chuteiras, Conjuntos e mais</p>
   </header>
-  <div class="container">
+
+  <nav>
+    <a href="#brasileiros">Brasileiros</a>
+    <a href="#internacionais">Internacionais</a>
+    <a href="#selecoes">Seleções</a>
+    <a href="#chuteiras">Chuteiras</a>
+    <a href="#casacos">Casacos</a>
+  </nav>
+
+  <section id="brasileiros" class="container">
     <div class="product">
-      <img src="https://via.placeholder.com/200x200?text=Camisa+de+Time" alt="Camisa de Time">
-      <h3>Camisa de Time</h3>
-      <p>A partir de R$89,90</p>
-      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar no WhatsApp</a>
+      <img src="https://via.placeholder.com/250x250?text=Flamengo" alt="Camisa Flamengo">
+      <h3>Camisa Flamengo 23/24</h3>
+      <p>R$ 99,90</p>
+      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar</a>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/200x200?text=Conjunto" alt="Conjunto Esportivo">
-      <h3>Conjunto Esportivo</h3>
-      <p>A partir de R$149,90</p>
-      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar no WhatsApp</a>
+      <img src="https://via.placeholder.com/250x250?text=Palmeiras" alt="Camisa Palmeiras">
+      <h3>Camisa Palmeiras 23/24</h3>
+      <p>R$ 99,90</p>
+      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar</a>
+    </div>
+  </section>
+
+  <section id="internacionais" class="container">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250?text=Real+Madrid" alt="Camisa Real Madrid">
+      <h3>Camisa Real Madrid 23/24</h3>
+      <p>R$ 109,90</p>
+      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar</a>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/200x200?text=Casaco" alt="Casaco Esportivo">
-      <h3>Casaco Esportivo</h3>
-      <p>A partir de R$199,90</p>
-      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar no WhatsApp</a>
+      <img src="https://via.placeholder.com/250x250?text=Barcelona" alt="Camisa Barcelona">
+      <h3>Camisa Barcelona 23/24</h3>
+      <p>R$ 109,90</p>
+      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar</a>
+    </div>
+  </section>
+
+  <section id="selecoes" class="container">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250?text=Brasil" alt="Camisa Brasil">
+      <h3>Camisa Brasil 23/24</h3>
+      <p>R$ 109,90</p>
+      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar</a>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/200x200?text=Chuteira" alt="Chuteira">
-      <h3>Chuteira</h3>
-      <p>A partir de R$249,90</p>
-      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar no WhatsApp</a>
+      <img src="https://via.placeholder.com/250x250?text=Argentina" alt="Camisa Argentina">
+      <h3>Camisa Argentina 23/24</h3>
+      <p>R$ 109,90</p>
+      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar</a>
     </div>
-  </div>
+  </section>
+
+  <section id="chuteiras" class="container">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250?text=Chuteira+Nike" alt="Chuteira Nike">
+      <h3>Chuteira Nike Mercurial</h3>
+      <p>R$ 239,90</p>
+      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar</a>
+    </div>
+  </section>
+
+  <section id="casacos" class="container">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250?text=Casaco+PSG" alt="Casaco PSG">
+      <h3>Casaco PSG Corta-Vento</h3>
+      <p>R$ 179,90</p>
+      <a class="btn" href="https://wa.me/5521968671667" target="_blank">Comprar</a>
+    </div>
+  </section>
 </body>
 </html>
