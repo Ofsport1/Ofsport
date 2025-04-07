@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OFSport - Camisas de Futebol</title>
 
-  <!-- Fontes do Google similares às da Nike -->
+  <!-- Fontes similares às usadas pela Nike -->
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
@@ -13,16 +13,37 @@
       font-family: 'Helvetica', sans-serif;
       margin: 0;
       padding: 0;
-      background: #FFFFFF; /* Branco */
-      color: #000000; /* Preto */
+      background: #FFFFFF;
+      color: #000000;
     }
 
     header {
-      background: #000000; /* Preto */
-      color: #FFFFFF; /* Branco */
+      background: #000000;
+      color: #FFFFFF;
       text-align: center;
       padding: 20px 0;
       font-family: 'Anton', sans-serif;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #EA553B;
     }
 
     .container {
@@ -38,7 +59,7 @@
     }
 
     .product {
-      background: #FFFFFF; /* Branco */
+      background: #FFFFFF;
       padding: 10px;
       border-radius: 12px;
       text-align: center;
@@ -60,19 +81,19 @@
     .product h3 {
       margin: 10px 0 5px;
       font-size: 18px;
-      color: #005147; /* Verde Escuro */
+      color: #005147;
     }
 
     .price {
-      color: #BA2B2B; /* Vermelho */
+      color: #BA2B2B;
       font-weight: bold;
       font-size: 16px;
       font-family: 'Anton', sans-serif;
     }
 
     .cta-button {
-      background-color: #EA553B; /* Laranja */
-      color: #FFFFFF; /* Branco */
+      background-color: #EA553B;
+      color: #FFFFFF;
       padding: 10px 15px;
       text-decoration: none;
       border-radius: 5px;
@@ -81,7 +102,7 @@
     }
 
     .cta-button:hover {
-      background-color: #BA2B2B; /* Vermelho */
+      background-color: #BA2B2B;
     }
   </style>
 </head>
@@ -92,8 +113,18 @@
     <p>Camisas de futebol para todas as torcidas!</p>
   </header>
 
+  <nav>
+    <a href="#brasileiros">Brasileiros</a>
+    <a href="#internacionais">Internacionais</a>
+    <a href="#selecoes">Seleções</a>
+    <a href="#retro">Retrô</a>
+    <a href="#infantil">Infantil</a>
+    <a href="#conjuntos">Conjuntos</a>
+    <a href="#guia">Guia de Medidas</a>
+  </nav>
+
   <div class="container">
-    <div class="products">
+    <div class="products" id="brasileiros">
 
       <div class="product">
         <img src="https://i.imgur.com/GYiXk4K.jpg" alt="Camisa Flamengo">
